@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+#app {
+  width: 100%;
+  max-width: 100rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000; 
+  color: #E1E1E6;
+  margin: 12rem 4rem;
+}
+
+body, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 18rem;
+  margin-bottom: 8.6rem;
+}
+
+header #logo {
+  line-height: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.search input {
+  background: #06181C;
+  color: #7C7C8A;
+  font-size: 1.6rem;
+  border: none;
+  padding: 1.34rem;
+  border-radius: .5rem 0 0 .5rem;
+  width: 100%;
+}
+
+.search button {
+  background-color: #065E7C;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  padding: 1.3rem;
+  border: none;
+  width: 100%;
+  border-radius: 0 .5rem .5rem 0;
+  cursor: pointer;
+  max-width: 17rem;
+}
+
+.search button #star {
+  width: 2rem;
+  height: 2rem;
+}
+
+.search button #content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.search button span {
+  margin-bottom: -0.3rem;
+}
+
+.search button:hover {
+  background-color: #0a7ea5;
+}
+
+table {
+  width: 100%;
+  font-size: 2rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 2px solid #065E7C;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+table tr {
+  width: 100%;
+  height: 6.4rem;
+}
+
+table th {
+  background: #092D38;
+  text-align: left;
+  font-weight: bold;
+  padding: 1.6rem;
+}
+
+table th:first-child {
+  border-top-left-radius: .5rem;
+}
+
+table th:last-child {
+  border-top-right-radius: .5rem;
+}
+
+/* pega linhas pares */
+table tr:nth-child(even) {
+  background: #06161C;
+}
+
+/* pega linhas ímpares */
+table tr:nth-child(odd) {
+  background: #06181B;
+}
+
+/* body da tabela */
+td {
+  padding: 2.4rem;
+  text-align: left;
+}
+
+td.user {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+td.user img {
+  width: 5.6rem;
+  height: 5.6rem;
+  /* para garantir encaixar a imagem dentro do espaço 5x5 */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+td.user a {
+  text-decoration: none;
+  color: #E1E1E6;
+  font-weight: 400;
+}
+
+td.user a p {
+  font-weight: bold;
+}
+
+td .remove {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+table td {
+  border-bottom-left-radius: .5rem;
+}
+
+table td {
+  border-bottom-right-radius: .5rem;
+}
+
+#no-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  padding: 12rem;
+  font-size: 3rem;
+  color: #4E5455;
+}
+
+#no-container img {
+  width: 11rem;
+  height: 11rem;
+}
+
+#no-container span {
+  min-width: 32rem;
+}
