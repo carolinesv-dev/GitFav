@@ -125,7 +125,7 @@ table tr:nth-child(even) {
 
 /* pega linhas ímpares */
 table tr:nth-child(odd) {
-  background: #06181B;
+  background: #000000;
 }
 
 /* body da tabela */
